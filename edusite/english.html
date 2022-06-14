@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGNEEWBSC7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KGNEEWBSC7');
+  </script>
+  <style>
+    .js{
+      font-weight:bold;
+      color:red;
+    }
+
+    #first{
+      color:green;
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color ='white';
+  ">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color ='black';
+  ">
+  <input id="night_day" type="button" value="night" onclick="
+    if (document.querySelector('#night_day').value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color ='white'
+    document.querySelector('#night_day').value = 'day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color ='black'
+    document.querySelector('#night_day').value = 'night';
+  }
+  ">
+  <ol>
+    <li><a href="english.html">englishL</a></li>
+    <li><a href="coding.html">coding</a></li>
+    <li><a href="business.html">business</a></li>
+  </ol>
+  <h2 style="color:powderblue">HTML</h2>
+  <p>
+    <span id="first" class"=js">english</span> feader reserve has noticed that
+    <input  type="button" value="night" onclick="
+      if (this.value === 'night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color ='white'
+      this.value = 'day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color ='black'
+      this.value = 'night';
+    }
+    ">
+  </p>
+</body>
+</html>
